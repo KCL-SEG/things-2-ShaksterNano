@@ -6,6 +6,6 @@ from things.models import Thing
 
 class ThingForm(ModelForm):
     class Meta:
-        model: Thing = Thing
-        fields: list[str] = ["name", "description", "quantity"]
-        widgets: dict[str, Widget] = {"description": Textarea(), "quantity": NumberInput()}
+        model = Thing
+        fields = ["name", "description", "quantity"]
+        widgets = {"description": Textarea(), "quantity": NumberInput()}
